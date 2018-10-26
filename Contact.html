@@ -8,26 +8,29 @@
 </head>
 
 <body>
-	<aside >
+	<aside>
 			<div class="Liens">
-				<p class="TexteAside">Suis nous !</p>
-				<img src="images/facebook.png" class="LiensImages">
-				<img src="images/twitter.png" class="LiensImages">
-				<img src="images/youtube.png" class="LiensImages">
+				<a href="https://www.facebook.com/e.monsite"><img src="images/facebook.png" title="Facebook" class="LiensImages"></a>
+				<a href="https://twitter.com/Emonsite"><img src="images/twitter.png" title="Twitter" class="LiensImages"></a>
+				<a href="https://www.youtube.com/channel/UC78TrmL0AHjQ4lKO8IZcQhQ"><img src="images/youtube.png" title="YouTube" class="LiensImages"></a>
 			</div>
-		</aside>
+	</aside>
+
 	<header class="Header">
 			<img src="images/logo.png" class="Logo">
+				<form class="Connexion">
+				<input type="text" class="Input" placeholder="Pseudo ou Email">
+				<input type="password" class="Input" placeholder="Mot de passe">
+				<input type="submit" value="Connexion" class="Input BouttonConnexion">
+				</form>
+				<a href="Inscription.html" class="TextInscription"> Vous n'êtes pas inscrits ? Inscrivez vous dès maintenant !</a>
 	</header>
 	<nav class="Navigation">
 		<ul class="Menu">
-				<li><a href="" class="MenuLien">Acceuil</a></li>
-				<li><a href="" class="MenuLien">Recettes</a></li>
-				<li><a href="" class="MenuLien">Exercices</a></li>
-				<li><a href="" class="MenuLien">Menus</a></li>
-				<li><a href="" class="MenuLien">Connexion</a></li>
-				<li><a href="inscription.html" class="MenuLien">Inscription</a></li>
-			</ul>
+			<li><a href="index.html" class="MenuLien">Acceuil</a></li>
+				<li><a href="Nutrition.html" class="MenuLien">Nutrition</a></li>
+				<li><a href="Sport.html" class="MenuLien">Sport</a></li>
+				</ul>
 	</nav>
 	<div class="Contenu">
 		<form method="post" action="contact.php" class="ContactForm">

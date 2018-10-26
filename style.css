@@ -10,10 +10,10 @@ body{
 	justify-content: space-between;
 	min-height: 100vh;
 	text-align: justify;
-	background-color: black;
+	background-color: #171515;
 }
 .TexteAside{
-	color: black;
+	color: rgb(255,102,0);
 	font-size: 13px;
 	margin-top: 5px;
 	font-weight: bold;
@@ -21,29 +21,49 @@ body{
 .Liens{
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	top: 314px;
 	width: 40px;
-	height: 130px;
+	height: 125px;
 	position: fixed;
-	border-radius: 4px;
-	background-color: rgb(255,102,0);
+	border: rgb(255,102,0) solid;
+	border-radius: .3em;
+	background-color: black;
 }
 .LiensImages{
-	width: 40px;
+	width: 30px;
 	height: 30px;
 	margin-top: 5px;
+	margin-bottom: 5px;
 }
 .Header{
 	display: flex;
-	height: 314px;
+	height: 250px;
 	background-image: url(images/pompe.jpg);
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
+	overflow: auto;
+	justify-content: space-between;
 }
 .Logo{
 	display: flex;
 	max-width: 15%;
 	padding: 10px;
+}
+.Connexion{
+	position: fixed;
+	right: 10px;
+}
+.Input{
+	
+}
+.TextInscription{
+	position: fixed;
+	right: 10px;
+	top: 25px;
+	font-size: .8em;
+	color: lightgrey;
+	text-decoration: none;
 }
 .Navigation{
 }
@@ -60,7 +80,6 @@ body{
 	color: black;
 	margin: 5px;
 	border-radius: 8px;
-	background-image: url(images/button.png);
 	background-color: rgb(255,102,0);
 }
 .MenuLien:hover{
@@ -76,15 +95,15 @@ body{
 	display: flex;
 	margin: 60px;
 	color: rgb(255,102,0);
+	justify-content: space-between;
 }
 .LienInscription{
-	text-decoration: none;
+	/*text-decoration: none;*/
 	color: rgb(255,102,0);
 }
-.FitProf{
-	background-color: grey;
-	width: 50%;
-	margin-left: 30px;
+.ImgFitProf{
+	width: 40vh;
+	height: 45vh;
 }
 .Footer{
 	text-align: center;
@@ -93,6 +112,7 @@ body{
 	padding: .5em;
 }
 
+/* Règle CSS pour contact */
 .Label{
 	display: inline-block;
 	width: 150px;
@@ -130,4 +150,97 @@ textarea{
 	margin-bottom: 1em;
 	resize: none;
 	min-height: 5em;
+}
+
+/* Règle CSS pour Nutrition */
+.ContenuNutrition{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.AsideNutrition{
+	margin-top: 30px;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: contain;
+	color: gray;
+	width: 25%;
+}
+
+/*.PresentationNutrition{
+	color: #66E12A;
+}*/
+
+.LiensImagesNutrition1{
+	max-width: 44vh;
+}
+
+.LiensImagesNutrition2{
+	max-width: 50vh;
+	width: 44vh;
+	margin-right: 10px;
+}
+
+.LiensImagesNutrition3{
+	max-width: 44vh;
+	margin-right: 10px;
+}
+
+.TitreNutrition{
+	text-decoration: underline;
+	font-size: 1.0em;
+}
+
+.TitreNutritionPrincip{
+	font-style: italic;
+	border: ridge;
+	border-color: green;
+}
+
+/*.ParagrapheNutritionPrincip{
+	color : ;
+}*/
+
+.Ingredient{
+	max-width: 15px;
+	font-size: 0.8em;
+}
+
+.Preparation{
+	max-width: 10px;
+	font-size: 0.8em;
+}
+
+.PreparationListe {
+    list-style-type: decimal;
+}
+
+.ConseilFitPote{
+	list-style-type: square;
+	margin-left: 20px;
+	/*color : gray;*/
+}
+
+.ListeConseilFitPote{
+	max-width: 15px;
+	font-size: 0.8em;
+	margin-left: 20px;
+	/*color : gray;*/
+}
+
+/* Regle de Css pour la page Inscription */
+
+.InscriptionForm{
+	width: 450px;
+	margin: auto;
+	line-height: 2em;
+}
+
+.LabelBtn{
+	display: inline-block;
+	width: 150px;
+	margin: 10px;
 }
