@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Conseil sportif personnalisé - Fitman - Inscription</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<aside>
+			<div class="Liens">
+				<a href="https://www.facebook.com/e.monsite"><img src="images/facebook.png" title="Facebook" class="LiensImages"></a>
+				<a href="https://twitter.com/Emonsite"><img src="images/twitter.png" title="Twitter" class="LiensImages"></a>
+				<a href="https://www.youtube.com/channel/UC78TrmL0AHjQ4lKO8IZcQhQ"><img src="images/youtube.png" title="YouTube" class="LiensImages"></a>
+			</div>
+	</aside>
+
+	<header class="Header">
+			<img src="images/logo.png" class="Logo">
+				<form class="Connexion">
+				<input type="text" class="Input" placeholder="Pseudo ou Email">
+				<input type="password" class="Input" placeholder="Mot de passe">
+				<input type="submit" value="Connexion" class="Input BouttonConnexion">
+				</form>
+	</header>
+
+	<nav class="Navigation">
+		<ul class="Menu">
+			<li><a href="index.html" class="MenuLien">Acceuil</a></li>
+				<li><a href="Nutrition.html" class="MenuLien">Nutrition</a></li>
+				<li><a href="Sport.html" class="MenuLien">Sport</a></li>
+				</ul>
+	</nav>
+	<div class="Contenu">
+		<form method="post" action="Inscription.php" class="InscriptionForm">
+				<h1 class="H1">Inscrivez-vous !</h1>
+				</br>
+				<label for="Inscription_Nom" class="Label">Pseudonyme :</label>
+				<input type="text" id="Inscription_Nom" placeholder="Pseudonyme" class="TextInput">
+				<br>
+				<label for="Inscription_Nom" class="Label">Mot de passe :</label>
+				<input type="password" id="Inscription_Nom" placeholder="Mot de passe" class="TextInput">
+				<br>
+				<label for="Inscription_Sexe" class="Label">Sexe :</label>
+				<select id="ChoixMultipleSexe" class="TextInput">
+					<option value="Homme">Homme</option>
+					<option value="Femme">Femme</option>
+					<option value="Non Binaire">Non Binaire</option>
+				</select>
+				<br>
+				<label for="Inscription_Nom" class="Label">Nom :</label>
+				<input type="text" id="Inscription_Nom" placeholder="Votre Nom" class="TextInput">
+				<br>
+				<label for=Inscription_Prenom" class="Label">Prenom:</label>
+				<input type="text" id="Inscription_Prenom" placeholder="Votre Prenom" class="TextInput">
+				<br>
+				<label for="Inscription_Naissance" class="Label">Année de naissance :</label>
+				<input type="text" id="Inscription_Naissance" placeholder="xx/xx/xxxx" class="TextInput">
+				<br>
+				<label for="Inscription_Taille" class="Label">Taille :</label>
+				<input type="text" id="Inscription_Taille" placeholder="ex : 160cm" class="TextInput">
+				<br>
+				<label for="Inscription_Poids" class="Label">Poids :</label>
+				<input type="text" id="Inscription_Nom" placeholder="ex : 58kg" class="TextInput">
+				<br>
+				<label for='Inscription_Email' class="Label">Email :</label>
+				<input type="email" id="Inscription_Email" placeholder="Email"  class="TextInput">
+				<br>
+				<label for="Inscription_Travail" class="Label">Niveau Estimé :</label>
+				<select id="ChoixMultipleNiveau">
+					<option value="Débutant">Débutant</option>
+					<option value="Expert">Expert</option>
+				</select>
+				<br>
+				<label for="Inscription_Travail" class="Label">Travaux Physiques:</label>
+				<select id="ChoixMultipleTravail">
+					<option value="Oui">Oui</option>
+					<option value="Non">Non</option>
+				</select>
+				<div class="Right">
+				<input type="Submit" value="Valider">
+				</div>
+			</form>
+		<img src="images/fitprof.png" class="ImgFitProf2">
+	</div>
+	<footer class="Footer">
+		<p>UDev 2018</p>
+	</footer>
+</body>
+</html>
